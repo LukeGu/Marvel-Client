@@ -111,8 +111,8 @@ class HomePage extends Component {
     let listBody = this.state.comicList.map((item, index) => {
       let pic = item.thumbnail.path + "/standard_fantastic.jpg";
       return (
-        <div className="col-md-4" key={index}>
-          <div className="card mb-4 shadow-sm">
+        <div className="col-md-3" key={index}>
+          <div className="card mb-3 shadow-sm">
             <img src={pic} style={{ height: 225 }} alt="pic" />
             <div className="card-body">
               <p className="card-text cardTitle">{item.title}</p>
